@@ -1,0 +1,23 @@
+﻿<Window x:Class="Cursusgeld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursusgeld"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Jaar:" HorizontalAlignment="Left" Height="37" Margin="88,68,0,0" VerticalAlignment="Top" Width="156" HorizontalContentAlignment="Right" FontSize="20"/>
+        <Label Content="Aantal lesuren:" HorizontalAlignment="Left" Height="41" Margin="104,129,0,0" VerticalAlignment="Top" Width="140" FontSize="20"/>
+        <Label Content="Inschrijvingsgeld:" HorizontalAlignment="Left" Height="42" Margin="83,0,0,0" VerticalAlignment="Center" Width="161" FontSize="20" RenderTransformOrigin="0.684,0.16"/>
+        <TextBox x:Name="yearTextBox" HorizontalAlignment="Left" Height="37" Margin="329,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="15" TextChanged="yearTextBox_TextChanged"/>
+        <TextBox x:Name="lesHoursTextBox" HorizontalAlignment="Left" Height="37" Margin="329,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="15"/>
+        <TextBox x:Name="registrationFeeTextBox" HorizontalAlignment="Left" Height="39" Margin="329,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="15" IsEnabled="False"/>
+        <Label x:Name="isNumeriekLabel" Content="" HorizontalAlignment="Left" Height="37" Margin="552,68,0,0" VerticalAlignment="Top" Width="166" FontSize="15"/>
+        <Label x:Name="isSchrikkelJaarLabel" Content="" HorizontalAlignment="Left" Height="37" Margin="552,133,0,0" VerticalAlignment="Top" Width="166" FontSize="15"/>
+        <Button x:Name="testNumeriekTextBox" Content="Test numeriek" HorizontalAlignment="Left" Height="45" Margin="67,281,0,0" VerticalAlignment="Top" Width="195" FontSize="20" Click="testNumeriekTextBox_Click"/>
+        <Button x:Name="calculateButton" Content="Berekenen" HorizontalAlignment="Left" Height="45" Margin="329,281,0,0" VerticalAlignment="Top" Width="180" FontSize="20" Click="calculateButton_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Height="45" Margin="566,281,0,0" VerticalAlignment="Top" Width="191" FontSize="20" Click="closeButton_Click"/>
+
+    </Grid>
+</Window>
